@@ -4,51 +4,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Блок</title>
+    <title>Блок комментариев</title>
   </head>
 
   <body>
     <div class="wrapper">
-      <div class="content">
-        <div class="container">
-          <div class="column">
-            <h2 class="title">Комментарии.</h2>
-            <form id="form" type="submit">
-              <div class="comment">
-                <label for="comment-name" class="label">Имя:</label>
-                <input
-                  type="text"
-                  class="form-kontrol"
-                  id="comment-name"
-                  placeholder="Имя"
-                />
-                <div class="js-comment-error comment-error"></div>
-              </div>
-              <div class="comment">
-                <label for="comment-body" class="label">Комментарий:</label>
-                <textarea
-                  name="comment-body"
-                  type="text"
-                  class="form-kontrol form-textarea"
-                  id="comment-body"
-                  placeholder="Присоединиться к осуждению..."
-                ></textarea>
-                <div class="js-comment-error comment-error"></div>
-              </div>
-              <div class="form-btn">
-                <button type="submit" id="comment-add" class="btn">
-                  Отправить
-                </button>
-                <button type="reset" id="comment" class="btn">
-                  Очистеть форму
-                </button>
-              </div>
-            </form>
-            <div id="commen-field"></div>
-            <button type="reset" id="comment-clear" class="btn">
-              Очистеть комминтарии
+      <div class="container">
+        <h2 class="title">Комментарии.</h2>
+        <form id="form" type="submit">
+          <div class="comment">
+            <label for="comment-name" class="label">Имя:</label>
+            <input
+              type="text"
+              class="form-kontrol"
+              id="comment-name"
+              placeholder="Имя"
+            />
+            <div class="js-comment-error comment-error"></div>
+          </div>
+          <div class="comment">
+            <label for="comment-body" class="label">Комментарий:</label>
+            <textarea
+              name="comment-body"
+              type="text"
+              class="form-kontrol form-textarea"
+              id="comment-body"
+              placeholder="Присоединиться к осуждению..."
+            ></textarea>
+            <div class="js-comment-error comment-error"></div>
+          </div>
+          <input type="date" name="comment-date" id="сomment-date" />
+          <div class="form-btn">
+            <button type="submit" id="comment-add" class="btn">
+              Отправить
+            </button>
+            <button type="reset" id="clear-form" class="btn">
+              Очистеть форму
             </button>
           </div>
+        </form>
+        <div id="commen-field"></div>
+        <div class="js-form-btn form-btn none">
+          <button type="reset" id="comment-clear" class="btn">
+            Очистеть комминтарии
+          </button>
+          <button type="reset" id="comment-clear-one" class="btn">
+            Очистеть первый коментарий
+          </button>
         </div>
       </div>
     </div>
