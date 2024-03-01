@@ -5,7 +5,7 @@ const commentFileOutNode = document.querySelector("#comment-field");
 const filedsNode = document.querySelectorAll(".form-control");
 const commentNameNode = document.querySelector("#comment-name");
 const commentBodyNode = document.querySelector("#comment-body");
-const commentDataNode = document.querySelector("#сomment-date");
+const commentDataNode = document.querySelector("#comment-date");
 const outMessageNode = document.querySelector("#comment-field");
 
 let comments = [];
