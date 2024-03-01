@@ -1,12 +1,12 @@
 const clearBtnNode = document.querySelector("#comment-clear");
 const clearFirstCommentBtnNode = document.querySelector("#comment-clear-one");
 const wrapperBtnNode = document.querySelector(".js-form-btn");
-const commentFileOutNode = document.querySelector("#comment-field");
+const commentFileOutNode = document.querySelector("#comment-filed");
 const filedsNode = document.querySelectorAll(".form-control");
 const commentNameNode = document.querySelector("#comment-name");
 const commentBodyNode = document.querySelector("#comment-body");
 const commentDataNode = document.querySelector("#comment-date");
-const outMessageNode = document.querySelector("#comment-field");
+const outMessageNode = document.querySelector("#comment-filed");
 
 let comments = [];
 loadComments();
@@ -188,11 +188,11 @@ clearBtnNode.addEventListener("click", function () {
 });
 
 clearFirstCommentBtnNode.addEventListener("click", function () {
-  commentFileOutNode.removeChild(commentFielOutNode.lastElementChild);
+  commentFileOutNode.removeChild(commentFileOutNode.lastElementChild);
   comments.splice(comments.length - 1);
   saveComments();
 
-  if (commentFielOutNode.children.length === 0) {
+  if (commentFileOutNode.children.length === 0) {
     wrapperBtnNode.classList.add("none");
   }
 });
