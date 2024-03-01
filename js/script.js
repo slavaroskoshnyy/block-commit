@@ -2,7 +2,7 @@ const clearBtnNode = document.querySelector("#comment-clear");
 const clearFirstCommentBtnNode = document.querySelector("#comment-clear-one");
 const wrapperBtnNode = document.querySelector(".js-form-btn");
 const commentFileOutNode = document.querySelector("#comment-filed");
-const filedsNode = document.querySelectorAll(".form-control");
+const filesNode = document.querySelectorAll(".form-control");
 const commentNameNode = document.querySelector("#comment-name");
 const commentBodyNode = document.querySelector("#comment-body");
 const commentDataNode = document.querySelector("#comment-date");
@@ -40,11 +40,9 @@ function validationFocus(node) {
 }
 
 function validation() {
-  let emptiImputs = Array.from(filedsNode).filter(
-    (input) => input.value === ""
-  );
+  let emptiImputs = Array.from(filesNode).filter((input) => input.value === "");
 
-  filedsNode.forEach(function (input) {
+  filesNode.forEach(function (input) {
     if (input.value === "") {
       input.classList.add("error");
       input.nextElementSibling.innerHTML = "Заполните поле!";
